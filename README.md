@@ -1,17 +1,17 @@
 # D4 Build Viewer (Decky Loader plugin)
 
-Browse Diablo IV builds from [InfinityBuilds](https://infinitybuilds.gg) in the Steam Deck Quick Access Menu.
+Browse Diablo IV builds in the Steam Deck Quick Access Menu.
 
-> **InfinityBuilds links only.** The plugin reads `infinitybuilds.gg/<lang>/builds/…` pages. Links from other build sites aren't supported.
+> **One supported build site for now.** Links from other build sites aren't supported yet.
 >
-> Unofficial fan tool, not affiliated with Blizzard Entertainment or InfinityBuilds. Builds and notes belong to their InfinityBuilds authors; every build page has a button to open the original.
+> Unofficial fan tool, not affiliated with Blizzard Entertainment or any build site. Builds and notes belong to their authors; every build page has a button to open the original.
 
 ## Status
 
 - **Version 0.2.1**, tested on a Steam Deck with Decky Loader.
-- **No release download yet.** The plugin is waiting on permission from InfinityBuilds before it is published. Until then you can build the zip yourself (see [Build from source](#build-from-source-windows)).
+- **No release download yet.** The plugin is waiting on permission from the build sites before it is published. Until then you can build the zip yourself (see [Build from source](#build-from-source-windows)).
 - **Try it in the browser:** an [interactive demo](https://claude.ai/artifact/3fnmkKJ5b8meN432vpqVde) of the Quick Access Menu panel, with example builds.
-- **Other build sites:** d4builds.gg appears in the demo as a preview only. It is not in the plugin and will only be added with that site's permission. Mobalytics is not planned.
+- **Other build sites** will only be added with each site's permission.
 
 ## Features
 
@@ -23,7 +23,7 @@ Browse Diablo IV builds from [InfinityBuilds](https://infinitybuilds.gg) in the 
 
 ## Privacy
 
-- Outbound requests are plain HTTPS GETs to `infinitybuilds.gg`, `data.infinitybuilds.gg` and `assets.infinitybuilds.gg`, made only when you load a build. Any other host, including redirects to one, is refused.
+- Outbound requests are plain HTTPS GETs to a fixed allowlist of the supported build site's hosts (page, data and icon hosts), made only when you load a build. Any other host, including redirects to one, is refused.
 - No cookies, referer, analytics, ads or accounts. The user agent is a generic `Mozilla/5.0 (X11; Linux x86_64)` with no device, account or plugin details.
 - The frontend makes no network requests of its own; icons are stored inside each build file and shown from there.
 - The phone page is served by the Deck itself and loads nothing from the internet.
