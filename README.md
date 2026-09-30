@@ -6,6 +6,13 @@ Browse Diablo IV builds from [InfinityBuilds](https://infinitybuilds.gg) in the 
 >
 > Unofficial fan tool, not affiliated with Blizzard Entertainment or InfinityBuilds. Builds and notes belong to their InfinityBuilds authors; every build page has a button to open the original.
 
+## Status
+
+- **Version 0.2.1**, tested on a Steam Deck with Decky Loader.
+- **No release download yet.** The plugin is waiting on permission from InfinityBuilds before it is published. Until then you can build the zip yourself (see [Build from source](#build-from-source-windows)).
+- **Try it in the browser:** an [interactive demo](https://claude.ai/artifact/3fnmkKJ5b8meN432vpqVde) of the Quick Access Menu panel, with example builds.
+- **Other build sites:** d4builds.gg appears in the demo as a preview only. It is not in the plugin and will only be added with that site's permission. Mobalytics is not planned.
+
 ## Features
 
 - **Get a link from your phone**: the QR screen opens a small receiver on the Deck (port 8765) with a one-time token in the QR. Scan it with a phone on the **same Wi-Fi**, paste the build link, send. The receiver only runs while that screen is open, and only accepts the phone that scanned the current QR.
@@ -24,7 +31,7 @@ Browse Diablo IV builds from [InfinityBuilds](https://infinitybuilds.gg) in the 
 ## Install
 
 1. Decky Loader → Settings → General → turn on **Developer mode**.
-2. Copy `DeckyD4Builds-v<version>.zip` to the Deck (e.g. `~/Downloads`). Newer zips install over older ones.
+2. Build `DeckyD4Builds-v<version>.zip` (see below) and copy it to the Deck (e.g. `~/Downloads`). Newer zips install over older ones.
 3. Decky Loader → Settings → Developer → **Install Plugin from ZIP File** → pick the zip.
 
 ## What it stores, and uninstalling
@@ -48,3 +55,7 @@ Browse Diablo IV builds from [InfinityBuilds](https://infinitybuilds.gg) in the 
 ```
 
 Uses the portable Node in `.tools/node`, runs `npm run build`, and writes `out/DeckyD4Builds-v<version>.zip` (version from `package.json`; bump it for every release). Zips of earlier versions stay in `out/`.
+
+## License
+
+BSD 3-Clause. See [LICENSE](LICENSE).
