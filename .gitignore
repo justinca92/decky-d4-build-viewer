@@ -1,0 +1,7 @@
+node_modules/
+dist/
+out/
+.tools/
+*.log
+__pycache__/
+docs/outreach-emails.md

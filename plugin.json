@@ -1,0 +1,11 @@
+{
+  "name": "D4 Build Viewer",
+  "author": "justin",
+  "flags": [],
+  "api_version": 1,
+  "publish": {
+    "tags": ["diablo", "builds", "guide"],
+    "description": "Diablo IV builds from InfinityBuilds (infinitybuilds.gg links only) in the Quick Access Menu. Send a link from your phone by QR on the same Wi-Fi, or type it in. Unofficial; not affiliated with Blizzard or InfinityBuilds.",
+    "image": "https://opengraph.githubassets.com/1/SteamDeckHomebrew/PluginLoader"
+  }
+}
